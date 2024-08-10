@@ -1,27 +1,59 @@
 *{
     padding: 0;
     margin: 0;
-    
 }
+
 .banner{
     background-color: #deccff;
-
 }
+
 .btn-success{
     background-color: blueviolet !important;
 }
+
 .color{
     color: #6d1d8e;
 }
+
 .bg{
     background-image: url("./asset\ 13.png");
     width: 100%;
     height: 500px;
     background-size: cover;
     background-position: center;
-    
-
 }
+
 .btn{
     background-color: aliceblue;
 }
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: blue !important;
+    /* background-color: #e0e0e0; */
+    border-radius: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: blue;
+    transition: width 0.3s;
+    bottom: -3px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
